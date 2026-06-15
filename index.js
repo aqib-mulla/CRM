@@ -452,7 +452,7 @@ app.get("/auth/get-pdf/:filename", (req, res) => {
 
 
 app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname,'./build'))
+    res.sendFile(path.join(__dirname,'./build/index.html'))
 })
 
 
