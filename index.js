@@ -72,8 +72,8 @@ import { billPrint } from './controllers/bill.js';
 import { createBill } from './controllers/auth.js';
 import { addFees, getFeesList, feesMaster,getFees, deleteFees, filterFees, updateFees, getDepartments } from './controllers/feesMaster.js';
 import { savePrescription, getPrescription, printPrescription, getPrescriptionList, printPrescriptions } from './controllers/patientPrescription.js';
-import { connectPharmacyDB } from './config/pharmacyDB.js';
-import pharmacyRoutes from './routes/pharmacyRoutes.js';
+// import { connectPharmacyDB } from './config/pharmacyDB.js';
+// import pharmacyRoutes from './routes/pharmacyRoutes.js';
 
 // CONFIGURATIONS
 const __filename = fileURLToPath(import.meta.url);
@@ -467,19 +467,40 @@ app.get('*', function(req, res) {
 // app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 // })
 // .catch((error)=> console.log(`${error} did not connect`))
+
+
+//working pharmacy and clinic
+// const PORT = process.env.PORT || 6001;
+
+// mongoose.connect(process.env.MONGO_URL, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// })
+// .then(async () => {
+//   console.log('✅ Connected to clinic DB');
+//   await connectPharmacyDB(); // connect secondary pharmacy DB
+
+//   app.use('/auth', pharmacyRoutes);
+  
+
+//   app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+// })
+// .catch((err) => console.log('❌ Error connecting to clinic DB:', err.message));
+
+
 const PORT = process.env.PORT || 6001;
 
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-.then(async () => {
-  console.log('✅ Connected to clinic DB');
-  await connectPharmacyDB(); // connect secondary pharmacy DB
+.then(() => {
+  console.log('✅ Connected to MongoDB');
 
-  app.use('/auth', pharmacyRoutes);
-  
-
-  app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+  });
 })
-.catch((err) => console.log('❌ Error connecting to clinic DB:', err.message));
+.catch((err) => {
+  console.log('❌ MongoDB Connection Error:', err.message);
+});
