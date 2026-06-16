@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.845c480c.css",
-    "main.js": "/static/js/main.a04c082e.js",
+    "main.js": "/static/js/main.9e31a801.js",
     "static/js/703.6f3c6be5.chunk.js": "/static/js/703.6f3c6be5.chunk.js",
     "static/js/513.40eda7ac.chunk.js": "/static/js/513.40eda7ac.chunk.js",
     "static/js/787.b706c1a2.chunk.js": "/static/js/787.b706c1a2.chunk.js",
@@ -11,7 +11,6 @@
     "static/media/feesMaster.jpg": "/static/media/feesMaster.f3b3e15e0fb20e82892d.jpg",
     "static/media/patients.jpg": "/static/media/patients.abe90db4999a5bc10274.jpg",
     "static/media/reports.jpg": "/static/media/reports.f80ac484102452ee60ea.jpg",
-    "static/media/testsumarry.jpg": "/static/media/testsumarry.8befcc1cfc6ca5e48a54.jpg",
     "static/media/grouptest.jpg": "/static/media/grouptest.fd33e26ce3f5c0539965.jpg",
     "static/media/userAccess.jpg": "/static/media/userAccess.1958859443a4bfdd4f38.jpg",
     "static/media/tests.jpg": "/static/media/tests.cce3dbc7d688e8cd799a.jpg",
@@ -21,13 +20,13 @@
     "static/media/loading.gif": "/static/media/loading.80419b2be1a05cd2bb78.gif",
     "index.html": "/index.html",
     "main.845c480c.css.map": "/static/css/main.845c480c.css.map",
-    "main.a04c082e.js.map": "/static/js/main.a04c082e.js.map",
+    "main.9e31a801.js.map": "/static/js/main.9e31a801.js.map",
     "703.6f3c6be5.chunk.js.map": "/static/js/703.6f3c6be5.chunk.js.map",
     "513.40eda7ac.chunk.js.map": "/static/js/513.40eda7ac.chunk.js.map",
     "787.b706c1a2.chunk.js.map": "/static/js/787.b706c1a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.845c480c.css",
-    "static/js/main.a04c082e.js"
+    "static/js/main.9e31a801.js"
   ]
 }
